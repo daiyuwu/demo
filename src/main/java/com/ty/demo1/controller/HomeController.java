@@ -1,4 +1,4 @@
-package com.ty.demo1;
+package com.ty.demo1.controller;
 
 import java.text.DateFormat;
 import java.util.Date;
