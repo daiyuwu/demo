@@ -33,6 +33,10 @@
 	<!-- mongoDB -->
 	<import resource="classpath:../spring/appServlet/db.xml" />
 	
-	
+	<bean id="cacheManager" class="org.springframework.cache.ehcache.EhCacheCacheManager"
+          p:cacheManager-ref="ehcache"/>
+    <bean id="ehcache" class="org.springframework.cache.ehcache.EhCacheManagerFactoryBean"
+          p:configLocation="classpath:../spring/appServlet/ehcache.xml"
+          p:shared="true"/>	   
 	
 </beans>
