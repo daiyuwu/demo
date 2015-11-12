@@ -1,8 +1,8 @@
 package com.ty.demo1.controller;
 
-public class HomeCB2Controller {
+public class HomeCB3Controller {
 
-	public HomeCB2Controller() {
+	public HomeCB3Controller() {
 		// TODO Auto-generated constructor stub
 	}
 
