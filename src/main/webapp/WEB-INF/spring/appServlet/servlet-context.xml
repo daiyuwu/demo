@@ -33,6 +33,14 @@
 	<!-- mongoDB -->
 	<import resource="classpath:../spring/appServlet/db.xml" />
 	
+	<!-- <bean id="readPreferenceSecondary" class="com.mongodb.TaggableReadPreference.SecondaryReadPreference"></bean>
+    
+    <bean id="mongoTemplate" class="org.springframework.data.mongodb.core.MongoTemplate">
+    	<constructor-arg name="mongo" ref="mongo" />
+        <constructor-arg name="databaseName" value="stars" />
+        <property name="readPreference" ref="readPreferenceSecondary"></property>
+    </bean> -->
+	
 	<bean id="cacheManager" class="org.springframework.cache.ehcache.EhCacheCacheManager"
           p:cacheManager-ref="ehcache"/>
     <bean id="ehcache" class="org.springframework.cache.ehcache.EhCacheManagerFactoryBean"

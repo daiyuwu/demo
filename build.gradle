@@ -15,6 +15,7 @@ dependencies {
 	compile 'org.springframework:spring-webmvc:4.1.6.RELEASE'
 	compile 'org.springframework:spring-context:4.1.6.RELEASE'
 	compile 'org.springframework:spring-context-support:4.1.6.RELEASE'
+	compile 'org.springframework.data:spring-data-mongodb:1.8.0.RELEASE'
 	compile 'org.mongodb:mongo-java-driver:3.0.3'
 	compile 'net.sf.ehcache:ehcache:2.10.0'
 	compile 'mysql:mysql-connector-java:5.1.6'
@@ -33,7 +34,7 @@ eclipse {
     }
     component {
       //define context path, default to project folder name
-      contextPath = 'springdemo1'
+      contextPath = 'demo'
     }
     
   }
